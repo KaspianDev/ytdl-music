@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp ytdl-music ~/.local/bin/ytdl-music
