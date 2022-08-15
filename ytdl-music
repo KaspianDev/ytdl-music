@@ -1,8 +1,12 @@
 #!/bin/bash
 
-echo "Song: "
-
-read songUrl
+if [ -z $1 ]
+then
+  echo "Song: "
+  read songUrl
+else
+  songUrl=$1
+fi
 
 yt-dlp -x $songUrl \
  --extract-audio \
